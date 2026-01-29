@@ -1,0 +1,28 @@
+/*
+ * my_pin_config.c
+ *
+ *  Created on: Nov 19, 2025
+ *      Author: raghav
+ */
+
+
+#include "MY_PIN_CONFIG.h"
+
+void UART_PIN_INIT(uint8_t pin)
+{
+	//Enable the clock for the GPIO pin
+	RCC->AHB1ENR |= RCC_AHB1ENR_GPIOAEN;
+
+	//Set the mode as alternate function
+	A->MODER |= BV(pin*2+1);
+	A->MODER &= ~(BV(pin*2));
+
+	//Set no pull up and pull down
+	A->PUPDR &= ~(BV(pin*2+1)|BV(pin*2));
+
+	//Set alternate functions as AF7
+	if(pin>7)
+		A->AFR[1] |= 7<<((pin-8)*4);
+	else
+		A->AFR[0] |= 7<<(pin*4);
+}

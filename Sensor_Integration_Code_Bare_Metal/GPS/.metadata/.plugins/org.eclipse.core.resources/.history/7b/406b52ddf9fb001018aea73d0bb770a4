@@ -1,0 +1,24 @@
+/*
+ * GPS.h
+ *
+ *  Created on: Jan 28, 2026
+ *      Author: raghav
+ */
+
+#ifndef INC_GPS_H_
+#define INC_GPS_H_
+
+
+#include <stdint.h>
+#include <string.h>
+#include <stdlib.h>
+#include "uart.h"
+
+float nmea_to_decimal(float nmea, char dir);
+static void format_decimal(float val, char *buf, int precision);
+static void format_decimal(float val, char *buf, int precision);
+void parse_gga(char* sentence, char* lat_str, char* lon_str, char* time_str);
+void parse_rmc(char* sentence, char* date_str);
+
+
+#endif /* INC_GPS_H_ */

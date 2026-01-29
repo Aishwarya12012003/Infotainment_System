@@ -1,0 +1,105 @@
+/*
+ * my_uart_config.c
+ *
+ *  Created on: Nov 19, 2025
+ *      Author: raghav
+ */
+
+
+#include "MY_PIN_CONFIG.h"
+#include "MY_UART_CONFIG.h"
+
+volatile uint8_t i=0;
+
+void UART_INIT(void)
+{
+	//Configure the pins
+	UART_PIN_INIT(USART_1_RX);
+	UART_PIN_INIT(USART_1_TX);
+
+	//Uart2
+	UART_PIN_INIT(USART_2_RX);
+	UART_PIN_INIT(USART_2_TX);
+
+	//Enable the USART1 clock
+	RCC->APB2ENR |= RCC_APB2ENR_USART1EN;
+
+	//Uart2
+	RCC->APB1ENR |= RCC_APB1ENR_USART2EN;
+
+	//Set the baud rate
+	U1->BRR |= 0x0683;
+
+	//uart2
+	U2->BRR |= 0x0683;
+
+	//Enable interrupt
+	U1->CR1 = USART_CR1_RXNEIE;
+	NVIC_EnableIRQ(USART1_IRQn);
+
+	//Configure the UART Registers
+	U1->CR1 |= USART_CR1_UE | USART_CR1_TE | USART_CR1_RE;
+
+	//uart2
+	U2->CR1 |= USART_CR1_UE | USART_CR1_TE | USART_CR1_RE;
+}
+
+void UART_SEND_DATA(uint8_t data)
+{
+	while(!(U1->SR & USART_SR_TXE));
+	U1->DR = data;
+}
+
+void UART_TX(char *str)
+{
+	for(int i=0;str[i]!='\0';i++)
+		UART_SEND_DATA(str[i]);
+}
+
+void UART_SEND_DATA_2(uint8_t data)
+{
+	while(!(U2->SR & USART_SR_TXE));
+	U2->DR = data;
+}
+
+void UART_TX_2(char *str)
+{
+	for(int i=0;str[i]!='\0';i++)
+		UART_SEND_DATA_2(str[i]);
+}
+
+//char UART_RECIEVE_DATA(void)
+//{
+//	while(!(U1->SR & USART_SR_RXNE));
+//	return U1->DR;
+//}
+//
+//void UART_RX(char *str)
+//{
+//	int i=0;
+//	char ch;
+//	do
+//	{
+//		ch = UART_RECIEVE_DATA();
+//		str[i++] = ch;
+//	}while(ch!='\r');
+//	str[i++] = '\n';
+//	str[i] = '\0';
+//}
+
+void USART1_IRQHandler(void)
+{
+	if(U1->SR & USART_SR_RXNE)
+	{
+		char ch = U1->DR;
+		if(i<SIZE-1)
+		{
+			str[i++] = ch;
+			if(ch=='\n')
+			{
+				str[i] = '\0';
+				i=0;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+/*
+ * GPS.h
+ *
+ *  Created on: Jan 28, 2026
+ *      Author: raghav
+ */
+
+#ifndef INC_GPS_H_
+#define INC_GPS_H_
+
+
+#include <stdint.h>
+#include <string.h>
+#include <stdlib.h>
+#include "uart.h"
+
+
+
+#endif /* INC_GPS_H_ */

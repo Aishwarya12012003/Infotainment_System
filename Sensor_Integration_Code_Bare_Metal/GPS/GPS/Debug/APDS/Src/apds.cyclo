@@ -1,0 +1,5 @@
+../APDS/Src/apds.c:12:6:APDS_DelayMs	2
+../APDS/Src/apds.c:18:6:APDS_Write	1
+../APDS/Src/apds.c:28:9:APDS_Read	1
+../APDS/Src/apds.c:44:10:APDS_ReadProximity	1
+../APDS/Src/apds.c:52:10:APDS_ReadALS	1

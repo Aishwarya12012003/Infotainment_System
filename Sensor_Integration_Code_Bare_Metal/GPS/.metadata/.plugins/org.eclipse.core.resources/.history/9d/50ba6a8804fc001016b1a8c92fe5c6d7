@@ -1,0 +1,25 @@
+/*
+ * MY_UART_CONFIG.h
+ *
+ *  Created on: Nov 19, 2025
+ *      Author: raghav
+ */
+
+#ifndef MY_UART_CONFIG_H_
+#define MY_UART_CONFIG_H_
+
+
+#define U1 USART1
+
+#define U2 USART2
+
+#define SIZE 128
+extern char str[SIZE];
+
+
+void UART_INIT(void);
+void UART_TX(char *str);
+void UART_TX_2(char *str);
+//void UART_RX(char *str);
+
+#endif /* MY_UART_CONFIG_H_ */

@@ -1,0 +1,177 @@
+16:05:43 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  26680	    464	  17896	  45040	   aff0	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
+16:06:15 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  26680	    464	  17896	  45040	   aff0	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
+16:07:19 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  26776	    464	  17896	  45136	   b050	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
+16:09:07 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  26776	    464	  17896	  45136	   b050	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
+16:10:48 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  29176	    464	  17896	  47536	   b9b0	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
+16:11:36 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-size  GPS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29176	    464	  17896	  47536	   b9b0	GPS.elf
+Finished building: default.size.stdout
+ 
+16:13:41 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  29176	    464	  17896	  47536	   b9b0	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
+16:15:50 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  29176	    464	  17896	  47536	   b9b0	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
+16:17:45 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  26776	    464	  17896	  45136	   b050	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
+16:19:36 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  29176	    464	  17896	  47536	   b9b0	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
+16:22:48 **** Incremental Build of configuration Debug for project GPS ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/SPI/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/I2C/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/APDS/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/UART/Inc" -I"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/GPS/Inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "GPS.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Infotainment_System_New/GPS/GPS/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPS.elf
+ 
+arm-none-eabi-size  GPS.elf 
+arm-none-eabi-objdump -h -S GPS.elf  > "GPS.list"
+   text	   data	    bss	    dec	    hex	filename
+  29176	    464	  17896	  47536	   b9b0	GPS.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPS.list
+ 
