@@ -1,0 +1,55 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "ti,am335x-bone-black", "ti,am33xx";
+
+    part-number = "DESD-SPI0";
+    version = "00A0";
+
+    /* Disable cape-universal pinmux helpers for SPI0 pins */
+    fragment@0 {
+        target = <&ocp>;
+        __overlay__ {
+            P9_17_pinmux { status = "disabled"; };
+            P9_18_pinmux { status = "disabled"; };
+            P9_21_pinmux { status = "disabled"; };
+            P9_22_pinmux { status = "disabled"; };
+        };
+    };
+
+    /* SPI0 pinmux for P9_17/18/21/22 */
+    fragment@1 {
+        target = <&am33xx_pinmux>;
+        __overlay__ {
+            desd_spi0_pins: pinmux_desd_spi0_pins {
+                pinctrl-single,pins = <
+                    0x150 0x28    /* P9_17 spi0_cs0  */
+                    0x154 0x28    /* P9_18 spi0_d1   */
+                    0x158 0x28    /* P9_21 spi0_d0   */
+                    0x15c 0x28    /* P9_22 spi0_sclk */
+                >;
+            };
+        };
+    };
+
+    /* SPI0 demo device at CS0 */
+    fragment@2 {
+        target = <&spi0>;
+        __overlay__ {
+            #address-cells = <1>;
+            #size-cells = <0>;
+
+            status = "okay";
+            pinctrl-names = "default";
+            pinctrl-0 = <&desd_spi0_pins>;
+
+            spi_demo0: spi-demo@0 {
+                compatible = "SPI_LCD";
+                reg = <0>;                    /* CS0 */
+                spi-max-frequency = <500000>; /* 500 kHz */
+            };
+            
+        };
+    };
+};

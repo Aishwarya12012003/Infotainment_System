@@ -1,0 +1,123 @@
+12:45:41 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/GPS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/UART/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/APDS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/I2C/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/SPI/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "Final_Integration_Code.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_Integration_Code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Final_Integration_Code.elf
+ 
+arm-none-eabi-size  Final_Integration_Code.elf 
+arm-none-eabi-objdump -h -S Final_Integration_Code.elf  > "Final_Integration_Code.list"
+   text	   data	    bss	    dec	    hex	filename
+  29064	    464	  17904	  47432	   b948	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 
+Finished building: Final_Integration_Code.list
+ 
+12:47:46 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-size  Final_Integration_Code.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29064	    464	  17904	  47432	   b948	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 
+12:49:19 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/GPS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/UART/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/APDS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/I2C/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/SPI/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "Final_Integration_Code.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_Integration_Code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Final_Integration_Code.elf
+ 
+arm-none-eabi-size  Final_Integration_Code.elf 
+arm-none-eabi-objdump -h -S Final_Integration_Code.elf  > "Final_Integration_Code.list"
+   text	   data	    bss	    dec	    hex	filename
+  29032	    464	  17904	  47400	   b928	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 
+Finished building: Final_Integration_Code.list
+ 
+12:50:05 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-size  Final_Integration_Code.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29032	    464	  17904	  47400	   b928	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 
+12:53:54 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/GPS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/UART/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/APDS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/I2C/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/SPI/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "Final_Integration_Code.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_Integration_Code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Final_Integration_Code.elf
+ 
+arm-none-eabi-size  Final_Integration_Code.elf 
+arm-none-eabi-objdump -h -S Final_Integration_Code.elf  > "Final_Integration_Code.list"
+   text	   data	    bss	    dec	    hex	filename
+  29032	    464	  17904	  47400	   b928	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 
+Finished building: Final_Integration_Code.list
+ 
+12:55:15 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/GPS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/UART/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/APDS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/I2C/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/SPI/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "Final_Integration_Code.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_Integration_Code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Final_Integration_Code.elf
+ 
+arm-none-eabi-size  Final_Integration_Code.elf 
+arm-none-eabi-objdump -h -S Final_Integration_Code.elf  > "Final_Integration_Code.list"
+   text	   data	    bss	    dec	    hex	filename
+  29032	    464	  17904	  47400	   b928	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 
+Finished building: Final_Integration_Code.list
+ 
+12:55:53 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/GPS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/UART/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/APDS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/I2C/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/SPI/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "Final_Integration_Code.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_Integration_Code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Final_Integration_Code.elf
+ 
+arm-none-eabi-size  Final_Integration_Code.elf 
+arm-none-eabi-objdump -h -S Final_Integration_Code.elf  > "Final_Integration_Code.list"
+   text	   data	    bss	    dec	    hex	filename
+  29032	    464	  17904	  47400	   b928	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 
+Finished building: Final_Integration_Code.list
+ 
+12:56:20 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F411CEUx -c -I../Inc -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/GPS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/UART/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/APDS/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/I2C/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/MCP2515_TX/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/SPI/Inc" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/include" -I"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:33:2: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   33 | #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |  ^~~~~~~
+arm-none-eabi-gcc -o "Final_Integration_Code.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Final_Integration_Code.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Final_Integration_Code.elf
+ 
+arm-none-eabi-size  Final_Integration_Code.elf 
+arm-none-eabi-objdump -h -S Final_Integration_Code.elf  > "Final_Integration_Code.list"
+   text	   data	    bss	    dec	    hex	filename
+  29032	    464	  17904	  47400	   b928	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 
+Finished building: Final_Integration_Code.list
+ 
+12:58:13 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-size  Final_Integration_Code.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29032	    464	  17904	  47400	   b928	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 

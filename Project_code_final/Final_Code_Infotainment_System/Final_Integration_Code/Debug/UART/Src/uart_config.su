@@ -1,0 +1,5 @@
+../UART/Src/uart_config.c:12:6:UART2_INIT	8	static
+../UART/Src/uart_config.c:34:6:UART2_TX	16	static
+../UART/Src/uart_config.c:40:6:UART2_SEND	24	static
+../UART/Src/uart_config.c:45:6:UART2_RX	4	static
+../UART/Src/uart_config.c:98:6:Get_GNGGA_Data	40	static

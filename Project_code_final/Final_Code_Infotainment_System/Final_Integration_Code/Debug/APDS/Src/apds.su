@@ -1,0 +1,5 @@
+../APDS/Src/apds.c:12:6:APDS_DelayMs	24	static
+../APDS/Src/apds.c:18:6:APDS_Write	16	static
+../APDS/Src/apds.c:28:9:APDS_Read	24	static
+../APDS/Src/apds.c:44:10:APDS_ReadProximity	16	static
+../APDS/Src/apds.c:52:10:APDS_ReadALS	16	static

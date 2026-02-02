@@ -1,0 +1,113 @@
+!SESSION 2026-01-30 14:46:10.421 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-01-30 14:46:27.563
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-01-30 14:46:27.564
+!MESSAGE Log4j2 initialized with config file /home/raghav/Desktop/Final_Code_Infotainment_System/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-01-30 14:46:31.113
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-30 14:47:20.560
+!MESSAGE Indexed 'Final_Integration_Code' (3 sources, 53 headers) in 2.17 sec: 1,954 declarations; 2,863 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-30 14:50:18.368
+!MESSAGE Indexed 'Final_Integration_Code' (12 sources, 75 headers) in 0.602 sec: 3,899 declarations; 11,187 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.013%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-30 14:53:35.339
+!MESSAGE Indexed 'Final_Integration_Code' (16 sources, 89 headers) in 0.925 sec: 5,427 declarations; 14,447 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.01%)
+!SESSION 2026-02-01 22:11:13.312 -----------------------------------------------
+eclipse.buildId=Version 1.19.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-02-01 22:11:22.934
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-02-01 22:11:22.935
+!MESSAGE Log4j2 initialized with config file /home/raghav/Desktop/Final_Code_Infotainment_System/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-02-01 22:11:30.020
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-02 10:30:18.488
+!MESSAGE Indexed 'Final_Integration_Code' (19 sources, 89 headers) in 2.25 sec: 5,381 declarations; 14,910 references; 0 unresolved inclusions; 2 syntax errors; 26 unresolved names (0.13%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-02 10:32:49.385
+!MESSAGE Indexed 'Final_Integration_Code' (22 sources, 92 headers) in 1.38 sec: 5,430 declarations; 15,252 references; 0 unresolved inclusions; 2 syntax errors; 26 unresolved names (0.13%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2026-02-02 10:44:11.474
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/Debug/Final_Integration_Code.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2026-02-02 10:44:11.475
+!MESSAGE /home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/Debug/Final_Integration_Code.elf not found
+!STACK 0
+java.io.FileNotFoundException: /home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/Debug/Final_Integration_Code.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-02 10:49:31.580
+!MESSAGE Indexed 'apds' (9 sources, 68 headers) in 0.986 sec: 3,551 declarations; 6,318 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.02%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-02-02 11:00:07.307
+!MESSAGE Indexed 'Final_Integration_Code' (23 sources, 91 headers) in 1.24 sec: 5,366 declarations; 15,372 references; 0 unresolved inclusions; 2 syntax errors; 2 unresolved names (0.0096%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2026-02-02 11:37:19.766
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: /home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/Debug/Final_Integration_Code.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2026-02-02 11:37:19.767
+!MESSAGE /home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/Debug/Final_Integration_Code.elf not found
+!STACK 0
+java.io.FileNotFoundException: /home/raghav/Desktop/Final_Code_Infotainment_System/Final_Integration_Code/Debug/Final_Integration_Code.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1054)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

@@ -1,0 +1,61 @@
+/*
+ * MY_MCP2515.c
+ *
+ *  Created on: Nov 3, 2025
+ *      Author: raghav
+ */
+
+
+
+#include "../Inc/SPI_CAN_header.h"
+//#include <stdio.h>
+
+void MCP2515_SET_BAUD_RATE_500KBPS(struct spi_device *spi)
+{
+	MCP2515_WRITE(spi,CNF1, 0x00);
+	MCP2515_WRITE(spi,CNF2, 0x90);
+	MCP2515_WRITE(spi,CNF3, 0x82);
+}
+
+
+int MCP2515_RX_INIT(struct spi_device *spi)
+{
+	MCP2515_RESET(spi);
+	MCP2515_READ(spi,CANCTRL);
+	MCP2515_READ(spi,CANSTAT);
+
+	MCP2515_WRITE(spi,CANCTRL,((MCP2515_READ(spi,CANCTRL)|0XF0)&(CONFIGURATION|0x0F))); //0x07
+
+	if((MCP2515_READ(spi,CANSTAT)&0xE0)!=CONFIGURATION)
+	{
+		return 1;
+	}
+
+	MCP2515_SET_BAUD_RATE_500KBPS(spi);
+
+	MCP2515_WRITE(spi,RXB0CTRL,0x60);
+	// Set masks to accept all messages (RXB0)
+	MCP2515_WRITE(spi,RXM0SIDH, 0x00);
+	MCP2515_WRITE(spi,RXM0SIDL, 0x00);
+	MCP2515_WRITE(spi,RXF0SIDH, 0x24);
+	MCP2515_WRITE(spi,RXF0SIDL, 0x60);
+
+
+
+
+	MCP2515_WRITE(spi,CANINTF,0x00);
+	MCP2515_READ(spi,CANINTE);
+	MCP2515_WRITE(spi,CANINTE,MCP2515_READ(spi,CANINTE) | CANINTE_RX0IE | CANINTE_TX0IE | CANINTE_MERRE);
+
+
+//	(MCP2515_READ(CANSTAT)&(NORMAL|0x0F))
+	MCP2515_WRITE(spi,CANCTRL,((MCP2515_READ(spi,CANCTRL)|0XF0)&(NORMAL|0x0F))); //0x07
+	MCP2515_READ(spi,CANCTRL);
+	MCP2515_READ(spi,CANSTAT);
+	if((MCP2515_READ(spi,CANSTAT)&0xE0)!=NORMAL)
+	{
+		return 2;
+	}
+	return 0;
+}
+

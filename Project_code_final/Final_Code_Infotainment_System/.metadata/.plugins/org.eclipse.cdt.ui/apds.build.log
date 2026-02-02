@@ -1,0 +1,10 @@
+10:49:50 **** Incremental Build of configuration Debug for project apds ****
+make -j8 all 
+arm-none-eabi-size  apds.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5476	     80	   1896	   7452	   1d1c	apds.elf
+Finished building: default.size.stdout
+ 
+
+10:49:50 Build Finished. 0 errors, 0 warnings. (took 157ms)
+

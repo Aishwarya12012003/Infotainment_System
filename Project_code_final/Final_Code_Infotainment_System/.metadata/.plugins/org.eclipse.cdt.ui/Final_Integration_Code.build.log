@@ -1,0 +1,10 @@
+12:58:13 **** Incremental Build of configuration Debug for project Final_Integration_Code ****
+make -j8 all 
+arm-none-eabi-size  Final_Integration_Code.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29032	    464	  17904	  47400	   b928	Final_Integration_Code.elf
+Finished building: default.size.stdout
+ 
+
+12:58:13 Build Finished. 0 errors, 0 warnings. (took 160ms)
+

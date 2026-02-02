@@ -1,0 +1,5 @@
+../UART/Src/uart_config.c:12:6:UART2_INIT	1
+../UART/Src/uart_config.c:34:6:UART2_TX	2
+../UART/Src/uart_config.c:40:6:UART2_SEND	2
+../UART/Src/uart_config.c:45:6:UART2_RX	2
+../UART/Src/uart_config.c:98:6:Get_GNGGA_Data	5
