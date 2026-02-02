@@ -1,0 +1,1 @@
+cmd_/home/debian/userBuffer/My_SPI_Driver.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/debian/userBuffer/My_SPI_Driver.ko /home/debian/userBuffer/My_SPI_Driver.o /home/debian/userBuffer/My_SPI_Driver.mod.o;  true

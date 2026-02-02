@@ -1,0 +1,1 @@
+cmd_/home/debian/lcd_driver2/Driver_code/main.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/debian/lcd_driver2/Driver_code/main.ko /home/debian/lcd_driver2/Driver_code/main.o /home/debian/lcd_driver2/Driver_code/main.mod.o;  true

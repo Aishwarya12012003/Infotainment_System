@@ -1,0 +1,1 @@
+cmd_/home/debian/lcd_driver2/Driver_code/Module.symvers := sed 's/ko$$/o/' /home/debian/lcd_driver2/Driver_code/modules.order | scripts/mod/modpost -m    -o /home/debian/lcd_driver2/Driver_code/Module.symvers -e -i Module.symvers   -T -

@@ -1,0 +1,2 @@
+/home/debian/userBuffer/MCP2515/Src/MY_MCP2515.o /home/debian/userBuffer/MCP2515/Src/MY_MCP2516_RX.o /home/debian/userBuffer/MCP2515/Src/SPI_CAN_operations.o /home/debian/userBuffer/SPI_driver_core/Src/SPI_driver_clean.o /home/debian/userBuffer/SPI_driver_core/Src/SPI_driver_init.o /home/debian/userBuffer/SPI_driver_core/Src/SPI_driver_operations.o /home/debian/userBuffer/SPI_driver_core/Src/SPI_driver_variables.o
+
