@@ -1,0 +1,6 @@
+../APDS/apds.c:4:26:APDS_Write	32	static
+../APDS/apds.c:11:26:APDS_Read	32	static
+../APDS/apds.c:18:9:APDS_ReadID	16	static
+../APDS/apds.c:26:19:APDS_Init	8	static
+../APDS/apds.c:57:19:APDS_ReadProximity	16	static
+../APDS/apds.c:63:19:APDS_ReadALS	40	static

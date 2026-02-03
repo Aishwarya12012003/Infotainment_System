@@ -1,0 +1,5 @@
+../GPS/Src/gps.c:33:7:nmea_to_decimal	32	static
+../GPS/Src/gps.c:42:6:format_decimal	64	static
+../GPS/Src/gps.c:72:6:convert_utc_to_ist	32	static
+../GPS/Src/gps.c:94:6:parse_gga	200	static
+../GPS/Src/gps.c:125:6:parse_rmc	152	static

@@ -1,0 +1,13 @@
+../Core/Src/main.c:85:6:UART_Print	16	static
+../Core/Src/main.c:91:6:APDS_ReadTask	24	static
+../Core/Src/main.c:123:6:UART_SendTask	24	static
+../Core/Src/main.c:140:6:GPS	256	static
+../Core/Src/main.c:180:6:MCP2515_SendTask	32	static
+../Core/Src/main.c:211:5:main	72	static
+../Core/Src/main.c:307:6:SystemClock_Config	88	static
+../Core/Src/main.c:354:13:MX_I2C1_Init	8	static
+../Core/Src/main.c:388:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:421:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:459:6:StartDefaultTask	16	static
+../Core/Src/main.c:478:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:496:6:Error_Handler	4	static,ignoring_inline_asm
